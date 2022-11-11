@@ -10,9 +10,10 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: build
+    discard-paths: yes
+    baseDirectory: /nk-app/build
     files:
         - '**/*'
   cache:
     paths:
-        - node_modules/**/*
+        - /nk-app/node_modules/**/*
